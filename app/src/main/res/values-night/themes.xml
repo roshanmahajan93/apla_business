@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ApnaBusiness" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="colorPrimaryVariant">@color/colorBlackFaded</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorYellow</item>
+        <item name="colorSecondaryVariant">@color/colorYellow</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <!-- Customize your theme here. -->
+
+        <item name="colorAccent">@color/colorBlackFaded</item>
+
+        <item name="android:textColorPrimary">?colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorRedLight</item>
+        <item name="divider">@color/colorGray</item>
+    </style>
+</resources>

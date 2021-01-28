@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="toolbarAttribute"
+            type="com.prishan.apnabusiness.data.model.ToolbarAttribute"
+            />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/leftBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        app:imageResource="@{toolbarAttribute.leftbtn}"
+        android:visibility="@{toolbarAttribute.leftBusy}"
+        style="@style/ToolbarStyle.AttributeIcon"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:text="@{toolbarAttribute.title}"
+        style="@style/ToolbarStyle.AttributeText"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/rightBtn"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        app:imageResource="@{toolbarAttribute.rightbtn}"
+        android:visibility="@{toolbarAttribute.rightBusy}"
+        style="@style/ToolbarStyle.AttributeIcon"/>
+
+    </RelativeLayout>
+
+</layout>

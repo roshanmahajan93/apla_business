@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/company_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img"
+            android:layout_centerInParent="true"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:text="Shop Name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:elevation="10dp"
+            android:textColor="@color/colorBlackFaded"
+            android:layout_below="@+id/company_logo"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_account"
+            tools:ignore="MissingConstraints"
+            style="@style/TextViewStyle"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            style="@style/LinearLayoutFormStyle">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/leftBtn1"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_outline_upi_payments_24"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_upi_payment_link"
+                style="@style/TextViewStyleContent"
+                android:layout_toRightOf="@+id/leftBtn1"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_arrow_right"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            style="@style/LinearLayoutFormStyle.Two">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/leftBtn2"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_outline_printer_24"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_recommended_printer"
+                tools:ignore="MissingConstraints"
+                style="@style/TextViewStyleContent"
+                android:layout_toRightOf="@+id/leftBtn2"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_arrow_right"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_setting"
+            tools:ignore="MissingConstraints"
+            style="@style/TextViewStyle"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            style="@style/LinearLayoutFormStyle">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/leftBtn3"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_outline_manage_staff_24"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage Staff"
+                tools:ignore="MissingConstraints"
+                style="@style/TextViewStyleContent"
+                android:layout_toRightOf="@+id/leftBtn3"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_arrow_right"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            style="@style/LinearLayoutFormStyle.Two">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/leftBtn4"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_outline_account_settings_24"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_account_settings"
+                tools:ignore="MissingConstraints"
+                style="@style/TextViewStyleContent"
+                android:layout_toRightOf="@+id/leftBtn4"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_arrow_right"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            style="@style/LinearLayoutFormStyle.Two">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/leftBtn5"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_outline_app_settings_24"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_app_settings"
+                tools:ignore="MissingConstraints"
+                style="@style/TextViewStyleContent"
+                android:layout_toRightOf="@+id/leftBtn5"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_arrow_right"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_other"
+            tools:ignore="MissingConstraints"
+            style="@style/TextViewStyle"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            style="@style/LinearLayoutFormStyle">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/leftBtn6"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_outline_business_card_24"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_business_card"
+                tools:ignore="MissingConstraints"
+                style="@style/TextViewStyleContent"
+                android:layout_toRightOf="@+id/leftBtn6"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_arrow_right"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            style="@style/LinearLayoutFormStyle.Two">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/leftBtn7"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_outline_ads_share_24"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_share_your_ads"
+                tools:ignore="MissingConstraints"
+                style="@style/TextViewStyleContent"
+                android:layout_toRightOf="@+id/leftBtn7"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_arrow_right"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            style="@style/LinearLayoutFormStyle.Two">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/leftBtn8"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_baseline_rate_us_24"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_rate_us"
+                tools:ignore="MissingConstraints"
+                style="@style/TextViewStyleContent"
+                android:layout_toRightOf="@+id/leftBtn8"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_arrow_right"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            style="@style/LinearLayoutFormStyle.Two">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/leftBtn9"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_outline_share_24"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_share"
+                tools:ignore="MissingConstraints"
+                style="@style/TextViewStyleContent"
+                android:layout_toRightOf="@+id/leftBtn9"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_arrow_right"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            style="@style/LinearLayoutFormStyle.Two">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/leftBtn10"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_baseline_about_24"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_about"
+                tools:ignore="MissingConstraints"
+                style="@style/TextViewStyleContent"
+                android:layout_toRightOf="@+id/leftBtn10"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                style="@style/ToolbarStyle.AttributeIcon"
+                android:src="@drawable/ic_arrow_right"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+        </View>
+    </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+</layout>
