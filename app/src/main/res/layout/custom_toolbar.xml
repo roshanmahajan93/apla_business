@@ -6,7 +6,7 @@
     <data>
         <variable
             name="toolbarAttribute"
-            type="com.prishan.apnabusiness.data.model.ToolbarAttribute"
+            type="com.prishan.aplabusiness.data.model.ToolbarAttribute"
             />
     </data>
 

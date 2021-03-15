@@ -7,7 +7,7 @@
 
         <variable
             name="productViewModel"
-            type="com.prishan.apnabusiness.ui.bottomnav.product.ProductViewModel" />
+            type="com.prishan.aplabusiness.ui.bottomnav.product.ProductViewModel" />
     </data>
 
 

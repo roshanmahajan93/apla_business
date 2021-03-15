@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.prishan.apnabusiness.ui.bottomnav.home.HomeFragment"
+        android:name="com.prishan.aplabusiness.ui.bottomnav.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/home_fragment" />
 
     <fragment
         android:id="@+id/navigation_product"
-        android:name="com.prishan.apnabusiness.ui.bottomnav.product.ProductMainFragment"
+        android:name="com.prishan.aplabusiness.ui.bottomnav.product.ProductMainFragment"
         android:label="@string/title_product"
         tools:layout="@layout/product_main_fragment" />
 
     <fragment
         android:id="@+id/navigation_order"
-        android:name="com.prishan.apnabusiness.ui.bottomnav.order.OrderFragment"
+        android:name="com.prishan.aplabusiness.ui.bottomnav.order.OrderFragment"
         android:label="@string/title_order"
         tools:layout="@layout/order_fragment" />
 
     <fragment
         android:id="@+id/navigation_account"
-        android:name="com.prishan.apnabusiness.ui.bottomnav.account.AccountFragment"
+        android:name="com.prishan.aplabusiness.ui.bottomnav.account.AccountFragment"
         android:label="@string/title_account"
         tools:layout="@layout/account_fragment" />
 </navigation>

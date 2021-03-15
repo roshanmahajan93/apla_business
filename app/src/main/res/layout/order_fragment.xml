@@ -7,7 +7,7 @@
 
         <variable
             name="orderViewModel"
-            type="com.prishan.apnabusiness.ui.bottomnav.order.OrderViewModel" />
+            type="com.prishan.aplabusiness.ui.bottomnav.order.OrderViewModel" />
     </data>
 
 
